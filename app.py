@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 car_data = pd.read_csv(
-    r'C:\Users\mexic\Python_Proyectos\Sp7_Proyecto\BasesDeDatos\vehicles_us.csv')
+    'vehicles_us.csv')
 # car_data = pd.read_csv('vehicles_us.csv')
 
 # Crear un botón en la aplicación Streamlit
@@ -34,7 +34,8 @@ if hist_button:
 if disp_button:
     # Escribir un mensaje en la aplicación
     st.write(
-        'Creación de un gráfico de dispersión para la relación entre el odómetro y el precio de los coches')
+        '''Creación de un gráfico de dispersión
+        para la relación entre el odómetro y el precio de los coches''')
 
     # Crear un gráfico de dispersión utilizando plotly.graph_objects
     # Se crea una figura vacía y luego se añade un rastro de scatter
